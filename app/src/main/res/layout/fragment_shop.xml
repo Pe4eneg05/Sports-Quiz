@@ -44,16 +44,35 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.962" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler"
+    <androidx.cardview.widget.CardView
+        android:id="@id/card_view_recycler"
         android:layout_width="334dp"
         android:layout_height="561dp"
-        android:overScrollMode="never"
-        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        app:layout_constraintBottom_toTopOf="@+id/button_back"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.789" />
+        app:layout_constraintVertical_bias="0.306">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="334dp"
+            android:layout_height="561dp"
+            android:overScrollMode="never"
+            app:cardCornerRadius="10dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/card_view_recycler"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/card_view_recycler"
+            app:layout_constraintTop_toTopOf="@+id/card_view_recycler"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

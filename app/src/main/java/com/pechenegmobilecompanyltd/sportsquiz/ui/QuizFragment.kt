@@ -64,13 +64,6 @@ class QuizFragment : Fragment() {
 
             binding.firstAnswer.setOnClickListener {
                 countQuestion++
-                textCountQuestion = String.format(
-                    resources.getString(
-                        R.string.count_question,
-                        (countQuestion + 1).toString()
-                    )
-                )
-                binding.textCountQuestion.text = textCountQuestion
                 if (countQuestion == 10) {
                     balance += countTrueAnswer
                     savePointsPrefData(balance)
@@ -81,10 +74,6 @@ class QuizFragment : Fragment() {
                         bindingQuestion(questions, countQuestion)
                     } else bindingQuestion(questions, countQuestion)
                 }
-            }
-
-            binding.secondAnswer.setOnClickListener {
-                countQuestion++
                 textCountQuestion = String.format(
                     resources.getString(
                         R.string.count_question,
@@ -92,6 +81,10 @@ class QuizFragment : Fragment() {
                     )
                 )
                 binding.textCountQuestion.text = textCountQuestion
+            }
+
+            binding.secondAnswer.setOnClickListener {
+                countQuestion++
                 if (countQuestion == 10) {
                     balance += countTrueAnswer
                     savePointsPrefData(balance)
@@ -102,10 +95,6 @@ class QuizFragment : Fragment() {
                         bindingQuestion(questions, countQuestion)
                     } else bindingQuestion(questions, countQuestion)
                 }
-            }
-
-            binding.thirdAnswer.setOnClickListener {
-                countQuestion++
                 textCountQuestion = String.format(
                     resources.getString(
                         R.string.count_question,
@@ -113,6 +102,10 @@ class QuizFragment : Fragment() {
                     )
                 )
                 binding.textCountQuestion.text = textCountQuestion
+            }
+
+            binding.thirdAnswer.setOnClickListener {
+                countQuestion++
                 if (countQuestion == 10) {
                     balance += countTrueAnswer
                     savePointsPrefData(balance)
@@ -123,6 +116,13 @@ class QuizFragment : Fragment() {
                         bindingQuestion(questions, countQuestion)
                     } else bindingQuestion(questions, countQuestion)
                 }
+                textCountQuestion = String.format(
+                    resources.getString(
+                        R.string.count_question,
+                        (countQuestion + 1).toString()
+                    )
+                )
+                binding.textCountQuestion.text = textCountQuestion
             }
         }
     }

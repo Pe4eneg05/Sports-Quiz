@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/text_question"
-        android:layout_width="350dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_text"
         android:fontFamily="@font/montserrat_font"

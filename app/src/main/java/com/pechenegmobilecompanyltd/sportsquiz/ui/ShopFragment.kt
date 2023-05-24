@@ -17,7 +17,7 @@ import com.pechenegmobilecompanyltd.sportsquiz.R
 import com.pechenegmobilecompanyltd.sportsquiz.databinding.FragmentShopBinding
 import com.pechenegmobilecompanyltd.sportsquiz.entity.PhotoItem
 import com.pechenegmobilecompanyltd.sportsquiz.recyclerview.AdapterRecyclerView
-import com.pechenegmobilecompanyltd.sportsquiz.recyclerview.DataClass
+import com.pechenegmobilecompanyltd.sportsquiz.data.DataClass
 
 class ShopFragment : Fragment() {
 

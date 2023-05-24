@@ -27,7 +27,7 @@ class ResultFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val textResult = if (countTrueAnswer > 5) "Good job!" else "Need more work!"
+        val textResult = if (countTrueAnswer > 5) "Good job!" else "Try Again!"
 
         binding.resultText.text = "Your result:\n\n$countTrueAnswer/10\n\n$textResult"
 

@@ -19,7 +19,7 @@
     <string name="easy">easy</string>
     <string name="medium">medium</string>
     <string name="hard">hard</string>
-    <string name="difficult">Difficult: %1$s</string>
+    <string name="difficult">Difficulty: %1$s</string>
     <string name="count_question">%1$s/10</string>
     <string name="finish">finish</string>
     <string name="your_result">Your Result:</string>
