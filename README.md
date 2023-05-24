@@ -10,12 +10,12 @@
 
 Кнопка "Shop" открывает магазин в котором мы можем приобрести и установить обои за накопленные очки, которые даются за правильнык ответы в викторине.
 
-![photo_5436224786578656079_y](https://github.com/Pe4eneg05/Sports-Quiz/assets/125829710/fe1dbe1e-6d8f-4e5c-92f6-2e86f1151292)
-
-![photo_5436224786578656078_y](https://github.com/Pe4eneg05/Sports-Quiz/assets/125829710/49c0f14e-ceec-4c1d-a482-dd99e8251749)
-
-![photo_5436224786578656077_y](https://github.com/Pe4eneg05/Sports-Quiz/assets/125829710/00a5ce94-50f8-4b0e-a091-937c6d4c1e9e)
+![photo_5436224786578656076_y](https://github.com/Pe4eneg05/Sports-Quiz/assets/125829710/69dd17b5-5624-48b9-b97c-78bc11ec01ed)
 
 ![photo_5436224786578656075_y](https://github.com/Pe4eneg05/Sports-Quiz/assets/125829710/82020155-f51a-4dc8-bb09-556014a3781c)
 
-![photo_5436224786578656076_y](https://github.com/Pe4eneg05/Sports-Quiz/assets/125829710/69dd17b5-5624-48b9-b97c-78bc11ec01ed)
+![photo_5436224786578656077_y](https://github.com/Pe4eneg05/Sports-Quiz/assets/125829710/00a5ce94-50f8-4b0e-a091-937c6d4c1e9e)
+
+![photo_5436224786578656078_y](https://github.com/Pe4eneg05/Sports-Quiz/assets/125829710/49c0f14e-ceec-4c1d-a482-dd99e8251749)
+
+![photo_5436224786578656079_y](https://github.com/Pe4eneg05/Sports-Quiz/assets/125829710/fe1dbe1e-6d8f-4e5c-92f6-2e86f1151292)
