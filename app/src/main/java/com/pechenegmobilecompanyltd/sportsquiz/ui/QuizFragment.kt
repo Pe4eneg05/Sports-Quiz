@@ -52,10 +52,20 @@ class QuizFragment : Fragment() {
         )
         binding.textCountQuestion.text = textCountQuestion
 
+        fun setTextCountQuestion() {
+            textCountQuestion = String.format(
+                resources.getString(
+                    R.string.count_question,
+                    (countQuestion + 1).toString()
+                )
+            )
+            binding.textCountQuestion.text = textCountQuestion
+        }
+
         viewLifecycleOwner.lifecycleScope.launch {
             val questions = mutableListOf<Question>()
             val listQuestions =
-                viewModel.loadQuestionsList("api.php/?amount=11&difficulty=${difficulty.lowercase()}&type=multiple&category=21")
+                viewModel.loadQuestionsList("api.php/?amount=10&difficulty=${difficulty.lowercase()}&type=multiple&category=21")
             listQuestions.forEach {
                 questions.add(it)
             }
@@ -72,15 +82,12 @@ class QuizFragment : Fragment() {
                     if (questions[countQuestion - 1].correct_answer == binding.firstAnswer.text) {
                         countTrueAnswer++
                         bindingQuestion(questions, countQuestion)
-                    } else bindingQuestion(questions, countQuestion)
+                        setTextCountQuestion()
+                    } else {
+                        bindingQuestion(questions, countQuestion)
+                        setTextCountQuestion()
+                    }
                 }
-                textCountQuestion = String.format(
-                    resources.getString(
-                        R.string.count_question,
-                        (countQuestion + 1).toString()
-                    )
-                )
-                binding.textCountQuestion.text = textCountQuestion
             }
 
             binding.secondAnswer.setOnClickListener {
@@ -93,15 +100,12 @@ class QuizFragment : Fragment() {
                     if (questions[countQuestion - 1].correct_answer == binding.secondAnswer.text) {
                         countTrueAnswer++
                         bindingQuestion(questions, countQuestion)
-                    } else bindingQuestion(questions, countQuestion)
+                        setTextCountQuestion()
+                    } else {
+                        bindingQuestion(questions, countQuestion)
+                        setTextCountQuestion()
+                    }
                 }
-                textCountQuestion = String.format(
-                    resources.getString(
-                        R.string.count_question,
-                        (countQuestion + 1).toString()
-                    )
-                )
-                binding.textCountQuestion.text = textCountQuestion
             }
 
             binding.thirdAnswer.setOnClickListener {
@@ -114,15 +118,12 @@ class QuizFragment : Fragment() {
                     if (questions[countQuestion - 1].correct_answer == binding.thirdAnswer.text) {
                         countTrueAnswer++
                         bindingQuestion(questions, countQuestion)
-                    } else bindingQuestion(questions, countQuestion)
+                        setTextCountQuestion()
+                    } else {
+                        bindingQuestion(questions, countQuestion)
+                        setTextCountQuestion()
+                    }
                 }
-                textCountQuestion = String.format(
-                    resources.getString(
-                        R.string.count_question,
-                        (countQuestion + 1).toString()
-                    )
-                )
-                binding.textCountQuestion.text = textCountQuestion
             }
         }
     }
